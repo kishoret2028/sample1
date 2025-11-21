@@ -14,17 +14,7 @@ public class FacebookTest {
 		String url=driver.getCurrentUrl();
 		System.out.println(url);
 		
-		driver.switchTo().newWindow(WindowType.TAB);
-		driver.get("https://9anime.org.lv/86-eighty-six-episode-1/");
-		String secondurl =driver.getCurrentUrl();
-		System.out.println(secondurl);
 		
-		if(url.equals(secondurl)) {
-			System.out.println("same url");
-		}
-		else{
-			System.out.println("different url");
-		}
 	}
 
 }
